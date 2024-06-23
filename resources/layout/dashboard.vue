@@ -75,7 +75,6 @@ module.exports = {
             if (data) {
                 this.nav_arr = data["nav"];
                 this.nav_tree = data["tree"];
-                console.log(this.nav_tree);
                 Object.values(this.nav_arr).forEach((v) => {
                     if (v.page.includes(".vue")) {
                         router.addRoute("layout-dashboard", {
